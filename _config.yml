@@ -1,6 +1,6 @@
 # Site settings
-title: Eric J. Smith's personal website
-description: A blog about lorem ipsum dolor sit amet
+title: Eric J. Smith
+description: Eric J. Smith's personal website
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -9,8 +9,6 @@ username: Eric J. Smith
 user_description: Founder CodeSmith Tools and Exceptionless. Principal Engineer for Learning Machine. I am passionate about technology and love to learn new things to keep up with the ever changing technology landscape. I also enjoy endless suffering from being a die hard Buffalo Bills fan.
 user_title: Passionate, detail oriented fullstack developer and entrepreneur
 email: eric@ericjsmith.com
-twitter_username: ejsmith
-github_username: ejsmith
 
 # Google-analytics
 google-analytics:
