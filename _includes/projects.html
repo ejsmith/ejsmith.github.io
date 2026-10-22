@@ -1,34 +1,22 @@
-<div class="container">
-  <div class="user-details">
-    <h3> Projects </h3>
+<section class="section section-alt" id="projects">
+  <div class="wrap">
+    <p class="kicker">Open source &amp; projects</p>
+    <h2>Building in the open for over a decade.</h2>
+    <p class="section-lede">
+      Alongside Exceptionless, I maintain libraries that run in production at my companies and plenty of others.
+    </p>
+
+    <div class="projects-head">
+      <h3>Selected projects</h3>
+      <a class="link-arrow" href="{{ site.social.github }}">All on GitHub</a>
+    </div>
+    <div class="repos">
+      {% for p in site.data.projects.open_source %}{% include project-card.html project=p %}{% endfor %}
+    </div>
+
+    <p class="upstream">
+      <span>Also contributed to</span>
+      OpenTelemetry .NET (Elasticsearch and Redis instrumentation), Jint, ASP.NET Core and Svelte ecosystem libraries.
+    </p>
   </div>
-  <div class="row user-projects">
-    <div class="six columns images">
-      <img alt="Exceptionless" src="{{ " /assets/img/exceptionless-screen.png " | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> Exceptionless </h5>
-      <li> C# / WebAPI / AngularJS / Elasticsearch / Redis / MongoDB</li>
-      <li> Lead developer</li>
-      <p>Provides real-time error reporting for your JavaScript, Node.js, .NET Core, ASP.NET, Web API, WebForms, WPF, Console,
-        and MVC apps. It organizes the gathered information into simple actionable data that will help your app become exceptionless!</p>
-      <a class="project-link" href="https://github.com/exceptionless/Exceptionless">Check it out</a>
-    </div>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns">
-      <img alt="CodeSmith Generator" src="{{ " /assets/img/generator.jpg " | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> CodeSmith Generator </h5>
-      <ul>
-        <li> C# / WPF / SQL</li>
-        <li> Lead developer</li>
-      </ul>
-      <p><em>Your code. Your way. Faster.</em> CodeSmith Generator is a software development tool to help you get your job done
-        faster. Technically speaking it is a template driven Source Code Generator that automates the creation of common
-        application source code for any language.</p>
-      <a class="project-link" href="http://www.codesmithtools.com/product/generator">Check it out</a>
-    </div>
-  </div>
-</div>
+</section>

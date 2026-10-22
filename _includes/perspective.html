@@ -1,0 +1,96 @@
+<section class="section" id="ai">
+  <div class="wrap">
+    <p class="kicker">AI, judgement and the build loop</p>
+    <h2>AI is an amplifier. It doesn't care what it amplifies.</h2>
+    <div class="two-col">
+      <div class="prose">
+        <p>
+          Give an experienced engineer with good instincts an AI agent and you get something close to a small team.
+          Give the same agent to someone who doesn't understand the business, the customer or the real cost of
+          complexity, and you get the wrong thing: built faster, explained more confidently, and in more lines of code
+          than anyone will ever review.
+        </p>
+        <p>
+          That's why I believe three skills deserve equal weight when we hire, promote and mentor engineers, and AI
+          makes all of them matter more, not less:
+        </p>
+        <dl class="traits">
+          <div><dt>Business sense</dt><dd>Weighing what something is worth against what it will cost to build, run and support.</dd></div>
+          <div><dt>Common sense</dt><dd>Noticing when something doesn't add up, even when the AI sounds confident.</dd></div>
+          <div><dt>Technical depth</dt><dd>Telling good output from merely plausible output.</dd></div>
+        </dl>
+      </div>
+
+      <figure class="fan" aria-labelledby="fan-title" aria-describedby="fan-desc">
+        <figcaption>
+          <span id="fan-title" class="fan-title">AI widens the gap between builders</span>
+          <span class="fan-sub">How I see it · value created over time</span>
+        </figcaption>
+        <svg viewBox="0 0 560 340" role="img" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="fan-fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3ecf8e" stop-opacity="0.16"/>
+              <stop offset="0.5" stop-color="#8e909a" stop-opacity="0.03"/>
+              <stop offset="1" stop-color="#ff5f6d" stop-opacity="0.16"/>
+            </linearGradient>
+          </defs>
+          <text class="fan-axis" x="48" y="20">Value created ↑</text>
+          <text class="fan-axis" x="48" y="334">Damage done ↓</text>
+          <line class="fan-grid" x1="48" y1="170" x2="380" y2="170"/>
+          <path class="fan-area" d="M48,170 C180,162 290,120 380,40 L380,300 C290,225 180,178 48,170 Z" fill="url(#fan-fill)"/>
+          <text class="fan-gap" x="300" y="174">the gap AI creates</text>
+          <path class="fan-line fan-good fan-dashed" d="M48,170 L380,135"/>
+          <path class="fan-line fan-bad fan-dashed" d="M48,170 L380,202"/>
+          <path class="fan-line fan-good fan-ai" pathLength="1" d="M48,170 C180,162 290,120 380,40"/>
+          <path class="fan-line fan-bad fan-ai" pathLength="1" d="M48,170 C180,178 290,225 380,300"/>
+          <circle class="fan-dot fan-good-dot" cx="380" cy="40" r="5"/>
+          <circle class="fan-dot fan-bad-dot" cx="380" cy="300" r="5"/>
+          <text class="fan-label" x="394" y="36">Strong judgement</text>
+          <text class="fan-label fan-label-sub" x="394" y="55">with AI</text>
+          <text class="fan-label fan-muted" x="394" y="132">Strong judgement</text>
+          <text class="fan-label fan-label-sub" x="394" y="151">without AI</text>
+          <text class="fan-label fan-muted" x="394" y="199">Poor judgement</text>
+          <text class="fan-label fan-label-sub" x="394" y="218">without AI</text>
+          <text class="fan-label" x="394" y="296">Poor judgement</text>
+          <text class="fan-label fan-label-sub" x="394" y="315">with AI</text>
+        </svg>
+        <ul class="fan-legend" aria-hidden="true">
+          <li><i class="good"></i>Strong judgement with AI</li>
+          <li><i class="good dashed"></i>Strong judgement without AI</li>
+          <li><i class="bad dashed"></i>Poor judgement without AI</li>
+          <li><i class="bad"></i>Poor judgement with AI</li>
+        </ul>
+        <p class="fan-desc" id="fan-desc">
+          Without AI, the difference between a strong hire and a poor one adds up slowly. With AI, both move
+          many times faster: one compounds value, the other compounds debt, wrong features and risk. That's why hiring for
+          judgement, business sense and common sense, not just technical skill, matters more than ever.
+        </p>
+      </figure>
+    </div>
+
+
+
+    <div class="ai-practice" id="practice">
+      <h3>How I put it to work</h3>
+      <p>
+        AI isn't a reason to build less. It's a reason to aim higher. The leverage isn't in generating code; it's in
+        complete loops where agents plan, build, test, review and fix their own work against automated checks, so we
+        can ship far more without letting quality or consistency slip.
+      </p>
+    </div>
+
+    <figure class="loop" aria-label="The build loop">
+      <ol class="loop-steps">
+        <li><span class="loop-n">01</span><strong>Spec</strong><span>Clear outcome, guidelines and skills the agents follow</span></li>
+        <li><span class="loop-n">02</span><strong>Build</strong><span>Several AI agents working in parallel, each on its own copy of the code</span></li>
+        <li><span class="loop-n">03</span><strong>Verify</strong><span>Automated builds, tests, quality scoring and UI checks</span></li>
+        <li><span class="loop-n">04</span><strong>Review</strong><span>Specialist AI reviewers, then a human who knows the business</span></li>
+        <li><span class="loop-n">05</span><strong>Fix</strong><span>Agents address every finding and run the loop again</span></li>
+        <li class="loop-ship"><span class="loop-n">→</span><strong>Ship</strong><span>Automated pipeline, preview environments, production</span></li>
+      </ol>
+      <figcaption class="loop-back"><span aria-hidden="true">↺</span> Verify → Review → Fix repeats until every check passes</figcaption>
+    </figure>
+    <p class="guardrails"><strong>Guardrails:</strong> AI gets no more access than the person using it, every change is traceable, and architecture and trade-offs stay with people. "The AI wrote it" is never an answer.</p>
+    <p class="toolkit"><span>Daily toolkit</span> Claude&nbsp;Code · Codex · T3&nbsp;Code · MCP · .NET&nbsp;Aspire · Playwright</p>
+  </div>
+</section>

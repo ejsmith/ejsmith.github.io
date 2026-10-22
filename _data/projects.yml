@@ -1,0 +1,23 @@
+# Rounded by hand; refresh occasionally.
+# status: live | building | maintained
+open_source:
+  - name: Foundatio
+    url: https://foundatio.dev
+    status: live
+    stats: 2.5k stars · 53M+ downloads
+    stack: C# · .NET
+    description: Pluggable building blocks for distributed apps. Caching, queues, locks, messaging, file storage and jobs behind one set of abstractions, with Redis, AWS, Azure and RabbitMQ implementations.
+
+  - name: Foundatio.Mediator
+    url: https://mediator.foundatio.dev
+    status: live
+    stats: 25K+ downloads
+    stack: C# · Source generators
+    description: A convention-based mediator built on source generators and interceptors. No runtime reflection, near direct-call performance, and generated API endpoints.
+
+  - name: Jint.Workflows
+    url: https://github.com/FoundatioFx/Jint.Workflows
+    status: live
+    stats: In production
+    stack: C# · JavaScript
+    description: Durable JavaScript workflows for .NET. Suspend, serialize and resume long-running orchestration with deterministic replay. Powers the workflow engine in Concord Link.

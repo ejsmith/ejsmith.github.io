@@ -1,0 +1,85 @@
+<section class="section" id="work">
+  <div class="wrap">
+    <p class="kicker">Today</p>
+    <h2>Replacing a 40-year-old system with a platform.</h2>
+
+    <div class="today">
+      <div class="today-copy">
+        <p class="venture-role">Distinguished Engineer · Concord Finance · 2023 – now</p>
+        <p>
+          Concord provides credit servicing and software for specialty finance, with more than $60 billion in assets under
+          administration. I led the greenfield build of
+          <a href="https://concordfinance.com/technology/link">Concord Link</a>, the platform replacing a green-screen
+          system that had run the business for more than four decades.
+        </p>
+        <p>
+          We started with almost no written business requirements, so the job was as much about understanding the
+          business as writing code: learning how servicing really worked from the people doing it, and designing for
+          needs nobody could spell out yet. Rather than build for one lending vertical, we built a platform. Like
+          Salesforce for loan servicing, it adapts to any kind of loan, lease or line of credit, so the business can
+          grow into new markets without starting over.
+        </p>
+        <p>
+          Concord Link is already live with clients, and in Concord's own words it's built and tested "with AI at every
+          stage of development."
+        </p>
+        <a class="link-arrow" href="https://concordfinance.com/technology/link">About Concord Link</a>
+      </div>
+      <ul class="today-points">
+        <li><strong>1,500+</strong><span>code reviews of teammates' work, setting the bar for a team of 20+ engineers</span></li>
+        <li><strong>AI review</strong><span>Every change is checked by five specialist AI reviewers (correctness, security, architecture, performance and code hygiene) before a person signs off. 1,000+ pull requests so far.</span></li>
+        <li><strong>Secure AI</strong><span>Staff can ask AI assistants about live loan data, limited to exactly what they're already allowed to see</span></li>
+      </ul>
+    </div>
+
+    <h3 class="systems-title">The two systems that made it adaptable</h3>
+    <div class="systems">
+      <article class="system">
+        <p class="system-kicker">scripting &amp; durable workflows</p>
+        <h3>Business rules as configuration, not code</h3>
+        <p>
+          In loan servicing, every client's contract is a little different. I designed and built Concord Link's scripting engine
+          on Jint so those differences live in configuration: sandboxed JavaScript rules for payment allocation, fees,
+          interest, statements and collections. On top of it I built durable workflows that can wait days for a payment
+          or an account event and then pick up exactly where they left off, with a visual builder so operations staff
+          can design them without writing code.
+        </p>
+        <ul class="system-facts">
+          <li>Triggered by account events, schedules or staff actions</li>
+          <li>Durable workflows with suspend, resume and deterministic replay</li>
+          <li>Scenario tests, versioning and AI-assisted authoring</li>
+          <li>Workflow core released as open-source <a href="https://github.com/FoundatioFx/Jint.Workflows">Jint.Workflows</a></li>
+        </ul>
+      </article>
+      <article class="system">
+        <p class="system-kicker">imports &amp; exports</p>
+        <h3>Meet clients where they are</h3>
+        <p>
+          Servicing runs on file formats that haven't changed in decades, and clients weren't going to change them for
+          us. So I designed and built an import and export pipeline that adapts to them: declarative field mappings
+          plus scripted transforms, encrypted files over SFTP or S3, on a schedule. Onboarding a new client and
+          migrating them off the legacy system became setup work instead of new engineering.
+        </p>
+        <ul class="system-facts">
+          <li>CSV, Excel, XML and JSON, with PGP encryption</li>
+          <li>Mappings built from a sample file, with live preview</li>
+          <li>Record-level errors, retries, de-duplication and audit trail</li>
+          <li>The repeatable migration path off the legacy system</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="earlier">
+      <h3>Earlier</h3>
+      <ul>
+        <li><strong>Chief Software Architect</strong>, SlideRoom / Liaison International: led a greenfield admissions platform used by hundreds of colleges</li>
+        <li><strong>Senior Database Engineer</strong>, Match.com</li>
+        <li><strong>Architect &amp; Lead Engineer</strong>, RedRiver Systems</li>
+        <li><strong>Architect</strong>, Rare Medium</li>
+        <li><strong>Software Developer</strong>, CurrSoft &amp; Frontier Communications (from 1991)</li>
+      </ul>
+    </div>
+
+    <p class="more"><a class="btn btn-ghost" href="{{ '/resume/' | relative_url }}">Read the full résumé <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>

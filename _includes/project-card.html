@@ -1,0 +1,9 @@
+{% assign p = include.project %}
+{% if p.url %}<a class="repo" href="{{ p.url }}">{% else %}<div class="repo">{% endif %}
+  <span class="repo-top">
+    <span class="repo-name">{{ p.name }}</span>
+    {% if p.stats %}<span class="repo-stats">{{ p.stats }}</span>{% endif %}
+  </span>
+  <span class="repo-desc">{{ p.description }}</span>
+  <span class="repo-stack">{{ p.stack }}</span>
+{% if p.url %}</a>{% else %}</div>{% endif %}

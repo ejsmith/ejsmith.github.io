@@ -1,0 +1,152 @@
+---
+layout: default
+title: Résumé
+description: "Résumé of Eric J. Smith: Distinguished Engineer at Concord Finance and two-time bootstrapped founder (CodeSmith Tools, Exceptionless), writing software since 1991."
+body_class: page-resume
+---
+<div class="resume-page">
+  <div class="wrap resume-actions">
+    <a class="link-back" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> Back to site</a>
+    <a class="btn btn-primary" href="{{ '/assets/resume.pdf' | relative_url }}" download="Eric-J-Smith-Resume.pdf">Download PDF</a>
+  </div>
+
+  <article class="resume">
+    <header class="r-header">
+      <div>
+        <h1>Eric J. Smith</h1>
+        <p class="r-title">Distinguished Engineer · Two-time bootstrapped founder</p>
+      </div>
+      <ul class="r-contact">
+        <li>{{ site.location }}</li>
+        <li><a data-email="{{ site.email_encoded }}" href="{{ site.social.linkedin }}">Email via LinkedIn</a></li>
+        <li><a href="{{ site.url }}">ericjsmith.dev</a></li>
+        <li><a href="{{ site.social.github }}">github.com/ejsmith</a></li>
+        <li><a href="{{ site.social.linkedin }}">linkedin.com/in/ericjsmith</a></li>
+      </ul>
+    </header>
+
+    <section class="r-section r-summary">
+      <p>
+        Engineering leader and two-time bootstrapped founder, writing software professionally since 1991. Built
+        CodeSmith Tools and Exceptionless, whose products have generated $16M+ in revenue with no outside funding, and
+        brings that business sense (pricing, sales, support, hosting costs, payroll) to every technical decision. Uses AI
+        to aim higher and deliver many times faster, with automated test, review and verification loops that keep
+        quality and consistency high.
+      </p>
+    </section>
+
+    <section class="r-section">
+      <h2>Experience</h2>
+
+      <div class="r-job">
+        <div class="r-job-head">
+          <h3>Distinguished Engineer <span>· Concord Finance</span></h3>
+          <p class="r-dates">2023 – Present</p>
+        </div>
+        <p class="r-context">Credit administration servicing and software for specialty finance; $60B+ in assets under administration.</p>
+        <ul>
+          <li>Led the greenfield build of <a href="https://concordfinance.com/technology/link">Concord Link</a>, the loan, lease and line-of-credit servicing platform replacing a green-screen system that ran the business for 40+ years. With almost no documented requirements, learned how servicing really worked from the people doing it and designed a configurable platform rather than a single-vertical product, so the business can grow into new markets without starting over. Now live with clients.</li>
+          <li>Designed and built the scripting engine and durable workflows (on Jint) that turn each client's business rules for payment allocation, fees, interest, statements and collections into configuration instead of engineering releases. Workflows wait days for an account event and resume with deterministic replay; released the core as open-source Jint.Workflows.</li>
+          <li>Designed and built the configurable import/export pipeline that turned client onboarding and legacy migration into setup work: declarative mappings with scripted transforms; CSV, Excel, XML and JSON; PGP, SFTP and S3; scheduling and record-level error handling.</li>
+          <li>Architected the multi-tenant .NET and SvelteKit platform on AWS, and set the engineering bar for a team of 20+ through architecture, mentoring and 1,500+ code reviews.</li>
+          <li>Led the team's AI adoption: an AI code-review pipeline (five specialist reviewers, evals and cost telemetry; 1,000+ PRs reviewed), a permission-scoped MCP server so staff can use AI with live data, and shared agent guidelines, skills and UI verification.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-head">
+          <h3>Founder <span>· Exceptionless</span></h3>
+          <p class="r-dates">2013 – Present</p>
+        </div>
+        <p class="r-context">Bootstrapped, open-source error, log and feature-usage monitoring, sold as a hosted SaaS and available self-hosted. Owner-operated alongside full-time roles.</p>
+        <ul>
+          <li>Founded and run the business and lead the product: pricing and packaging, hosting and infrastructure costs, customer support and the open-source community.</li>
+          <li>34M+ NuGet downloads, 3.5M+ Docker pulls and 3,500+ GitHub stars across its projects. Built on .NET, Elasticsearch, Redis and Kubernetes.</li>
+          <li>In 2026, used AI agents to finish a complete Svelte rewrite of the app and remove the legacy Angular UI (−42K lines). Also upgraded to .NET 10 and Aspire, launched a hosted MCP server with OAuth, and shipped an in-app AI assistant for investigating errors. That came to 580+ commits and 170 merged PRs in 2026.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-head">
+          <h3>Founder &amp; President <span>· CodeSmith Tools</span></h3>
+          <p class="r-dates">2003 – Present</p>
+        </div>
+        <p class="r-context">Bootstrapped developer-tools company behind CodeSmith Generator. Owner-operated alongside full-time roles since 2015.</p>
+        <ul>
+          <li>Built CodeSmith Generator, which began as a free tool and became one of the first widely used code generators for .NET. Designed the template language and built the parser, compiler and an IDE with autocomplete, plus the SchemaExplorer database metadata library and Visual Studio and MSBuild integrations.</li>
+          <li>Ran the business, hiring and managing a team of up to 10 people; together with Exceptionless, grew the products to $16M+ in lifetime revenue. Owned licensing, sales, online marketing, support and operations.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-head">
+          <h3>Chief Software Architect <span>· SlideRoom Technologies / Liaison International</span></h3>
+          <p class="r-dates">2015 – 2023</p>
+        </div>
+        <ul>
+          <li>Technical lead on a greenfield college admissions platform, now used by hundreds of colleges and universities (C#, TypeScript, AWS, Azure, Elasticsearch, Redis, RabbitMQ, Kubernetes).</li>
+          <li>Provided technical leadership and mentoring across three new commercial products; started knowledge-sharing and shared-components programs, and simplified and automated CI/CD with a deployment chat bot.</li>
+          <li>Built a data integration platform that merges contacts and activity from Stripe, MailChimp, HubSpot, Zendesk, Google Workspace, IMAP and dynamically mapped JSON, CSV and XML webhooks into one unified record.</li>
+        </ul>
+      </div>
+
+      <div class="r-job r-job-compact">
+        <div class="r-job-head">
+          <h3>Senior Database Engineer <span>· Match.com</span></h3>
+          <p class="r-dates">2003 – 2004</p>
+        </div>
+        <p>Designed, developed and optimized the database architecture for the largest online dating site in the world.</p>
+      </div>
+
+      <div class="r-job r-job-compact">
+        <div class="r-job-head">
+          <h3>Architect / Lead Software Engineer <span>· RedRiver Systems</span></h3>
+          <p class="r-dates">2001 – 2003</p>
+        </div>
+        <p>Designed a new application architecture on early .NET, led the development staff on new .NET technologies, and was technical lead for the United eWay online pledge processing system. Created the first version of CodeSmith here.</p>
+      </div>
+
+      <div class="r-job r-job-compact">
+        <div class="r-job-head">
+          <h3>Architect, Microsoft Competency Group <span>· Rare Medium</span></h3>
+          <p class="r-dates">2000 – 2001</p>
+        </div>
+        <p>Provided technical leadership for the Microsoft competency group's development staff.</p>
+      </div>
+
+      <div class="r-job r-job-compact">
+        <div class="r-job-head">
+          <h3>Software Developer <span>· CurrSoft; Frontier Communications</span></h3>
+          <p class="r-dates">1991 – 2000</p>
+        </div>
+        <p>Built vehicle maintenance management software at CurrSoft, then custom help desk software in Frontier Communications' IT department.</p>
+      </div>
+    </section>
+
+    <section class="r-section">
+      <h2>Open source</h2>
+      <ul class="r-oss">
+        <li><strong>Exceptionless</strong>: my largest open-source project (above). 3,500+ stars, 34M+ NuGet downloads, 3.5M+ Docker pulls.</li>
+        <li><strong>Foundatio</strong>: pluggable building blocks for distributed .NET apps (caching, queues, locks, messaging, storage, jobs), plus Elasticsearch repositories and Lucene-style query engines. 2,500+ stars, 53M+ downloads.</li>
+        <li><strong>Foundatio.Mediator</strong>: source-generated, convention-based mediator with no runtime reflection (2025).</li>
+        <li><strong>Jint.Workflows / Jint.TypeScript</strong>: durable JavaScript workflows (powering Concord Link's workflow engine), and TypeScript execution inside .NET with no Node.js (2026).</li>
+        <li><strong>Contributions</strong>: OpenTelemetry .NET (Elasticsearch and Redis instrumentation), Jint, ASP.NET Core.</li>
+      </ul>
+    </section>
+
+    <section class="r-section r-skills">
+      <h2>Skills</h2>
+      <dl>
+        <div><dt>Business</dt><dd>Product strategy, pricing, licensing, sales and marketing, support, hiring and team leadership</dd></div>
+        <div><dt>AI engineering</dt><dd>Agent workflows and orchestration, automated review and verification loops, MCP servers, evals</dd></div>
+        <div><dt>Architecture</dt><dd>Multi-tenant SaaS platforms, scripting and workflow engines, data integration, distributed systems</dd></div>
+        <div><dt>Technical</dt><dd>C# / .NET, TypeScript, SQL, Elasticsearch, AWS and Azure</dd></div>
+      </dl>
+    </section>
+
+    <section class="r-section">
+      <h2>Recognition</h2>
+      <p>ASPInsider · MSDN Magazine "Ten Must-Have .NET Tools" (2004) · Visual Studio Magazine Readers' Choice (2006, 2007, 2009) · DevProConnections Best Utility (2007–2009)</p>
+    </section>
+  </article>
+</div>

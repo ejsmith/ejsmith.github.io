@@ -1,10 +1,21 @@
 title: Eric J. Smith
-description: Eric J. Smith's personal website
+description: >-
+  Founder of CodeSmith Tools and Exceptionless. 35 years of building software and
+  running software businesses, now amplified by AI. Judgement, business sense and
+  common sense matter more than ever.
+url: https://ericjsmith.dev
 username: Eric J. Smith
-user_title: Detail oriented full stack developer and entrepreneur
-email: eric@ericjsmith.com
+user_title: Founder, Distinguished Engineer, and AI-amplified builder
+# Email is stored encoded (reversed, then ROT13) so scrapers can't harvest it; see README.
+email_encoded: zbp.ugvzfwpver@pver
+location: Dallas, TX
+
+social:
+  github: https://github.com/ejsmith
+  linkedin: https://www.linkedin.com/in/ericjsmith/
+  x: https://x.com/ejsmith
 
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['README.md', 'LICENSE.txt', 'node_modules']
