@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.username }} · {{ site.location }}</p>
-    <p class="footer-aside">Still a die-hard Buffalo Bills fan, which is its own long lesson in patience.</p>
+    <p class="footer-aside">
+      <img src="{{ '/assets/img/bills.svg' | relative_url }}" alt="Buffalo Bills" width="76" height="51">
+      <span><strong>Die-hard Buffalo Bills fan.</strong> 13 seconds in Kansas City taught me more about the cost of one bad judgement call than any postmortem ever has.</span>
+    </p>
     <p class="footer-links">
       <a href="{{ site.social.github }}">GitHub</a>
       <a href="{{ site.social.linkedin }}">LinkedIn</a>

@@ -411,7 +411,9 @@ div.repo:hover { transform: none; }
 .site-footer { border-top: 1px solid var(--line); padding: 36px 0; font-size: 0.88rem; color: var(--muted); }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; justify-content: space-between; }
 .footer-inner p { margin: 0; }
-.footer-aside { }
+.footer-aside { display: flex; align-items: center; gap: 16px; max-width: 60ch; line-height: 1.5; text-wrap: pretty; }
+.footer-aside img { flex: none; width: 76px; height: auto; }
+.footer-aside strong { display: block; color: var(--ink); font-weight: 550; font-size: 0.95rem; }
 .footer-links { display: flex; gap: 18px; }
 .footer-links a { text-decoration: none; }
 .footer-links a:hover { color: var(--ink); }
